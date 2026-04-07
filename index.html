@@ -1,9 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="bg">
 <head>
-  <title>TEST</title>
+<meta charset="UTF-8">
+<title>Irish Country Products</title>
+
+<style>
+body { font-family: Arial; margin:0; background:#f5f5f5; }
+
+header {
+  background:#7a0000;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+
+nav {
+  background:#222;
+  text-align:center;
+  padding:10px;
+}
+nav a {
+  color:white;
+  margin:10px;
+  text-decoration:none;
+}
+
+.container {
+  padding:20px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.category {
+  margin-top:40px;
+}
+
+.products {
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+}
+
+.product {
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  width:300px;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:15px;
+  margin-top:40px;
+}
+</style>
+
 </head>
+
 <body>
-  <h1>САЙТЪТ РАБОТИ 🎉</h1>
+
+<header>
+  <h1>Irish Country Products</h1>
+  <p>Марка: Бачо Ивань</p>
+</header>
+
+<nav>
+  <a href="#">Начало</a>
+  <a href="#products">Продукти</a>
+  <a href="blog.html">Блог</a>
+</nav>
+
+<div class="container" id="products">
+
+<h2>Продукти</h2>
+
+<div class="category">
+<h3>🥩 Кайма и скара</h3>
+
+<div class="products">
+<div class="product">Кайма за скара 100% свинска</div>
+<div class="product">Кебапче за скара - 80 гр</div>
+<div class="product">Кюфте за скара - 80 гр</div>
+<div class="product">Кайма натурална</div>
+<div class="product">Кайма дядо Пене</div>
+</div>
+
+</div>
+
+<div class="category">
+<h3>🍗 Пилешки продукти</h3>
+
+<div class="products">
+<div class="product">Пилешка кайма - 0,500 кг</div>
+<div class="product">Пилешка кайма - 1 кг</div>
+<div class="product">Пилешко кюфте 80гр</div>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Irish Country Products</p>
+</footer>
+
 </body>
 </html>
