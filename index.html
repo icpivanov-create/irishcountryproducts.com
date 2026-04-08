@@ -2,9 +2,23 @@
 
 <!-- ===== HEADER ===== -->
 <header>
-  <alt="Бачо Ивань - традиция и вкус Logo">
   <h1>Irish Country Products</h1>
-</header><!-- ===== HERO БАНЕР ===== -->
+  
+  <!-- МЕНЮ + КОНТАКТИ -->
+  <div class="top-bar">
+    <nav>
+      <a href="#">Начало</a>
+      <a href="#catalog">Каталог</a>
+      <a href="blog.html">Блог</a>
+    </nav>
+    <div class="contact">
+      <span>📞 0888110677</span> | 
+      <span>✉ office@irishcountryproducts.com</span>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO БАНЕР ===== -->
 <div style="
 background: url('banner.png');
 background-size: contain;
@@ -17,118 +31,100 @@ flex-direction: column;
 align-items: center;
 justify-content: flex-end;
 padding-bottom: 80px;
-text-align: flex-end;
 color: white;
+text-align: center;
 ">
-
 <h1 style="font-size:32px; margin-bottom:10px;">
 Премиум месни продукти
 </h1>
-
-
-
-
-
 </div>
-<!-- ===== NAVIGATION ===== -->
-<nav>
-  <a href="#">Начало</a>
-  <a href="#products">Продукти</a>
-  <a href="blog.html">Блог</a>
-</nav>
 
 <!-- ===== MAIN CONTENT ===== -->
+<div class="container" id="catalog">
+
+  <!-- Кайма и месни заготовки (замразени) -->
+  <div class="category">
+    <h2>🥩 Кайма и месни заготовки (замразени)</h2>
+    <div class="products">
+      <div class="product"><img src="images/placeholder.png" alt="Кайма за скара 100% свинска"><p>Кайма за скара 100% свинска – Тарелка 1кг</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Кебапче за скара"><p>Кебапче за скара - 80 гр – Тарелка 10бр</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Кюфте за скара"><p>Кюфте за скара - 80 гр – Тарелка 10бр</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Кайма 0,5 кг"><p>Кайма за скара 100% свинска – Тарелка 0,5 кг</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Кайма дядо Пене"><p>Кайма дядо Пене – Плик 1 кг</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Кебапче 50 гр"><p>Кебапче за скара - 50 гр – Тарелка 10бр</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Кюфте 50 гр"><p>Кюфте за скара - 50 гр – Тарелка 10бр</p></div>
+    </div>
+  </div>
+
+  <!-- Пилешки продукти -->
+  <div class="category">
+    <h2>🍗 Пилешки продукти</h2>
+    <div class="products">
+      <div class="product"><img src="images/placeholder.png" alt="Пилешка кайма 0,5 кг"><p>Пилешка кайма - 0,500 кг – Тарелка</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Пилешка кайма 1 кг"><p>Пилешка кайма - 1 кг – Тарелка</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Пилешко кюфте"><p>Пилешко кюфте 80гр – Тарелка 10бр</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Пилешко кебапче"><p>Пилешко кебапче 80гр – Тарелка 10бр</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Пилешко кюфте 50 гр"><p>Пилешко кюфте - 50 гр – Тарелка 10бр</p></div>
+    </div>
+  </div>
+
+  <!-- Сурово свинско и пилешко месо -->
+  <div class="category">
+    <h2>🥩 Сурово свинско и пилешко месо</h2>
+    <div class="products">
+      <div class="product"><img src="images/placeholder.png" alt="Сурово свинско шишче"><p>Сурово свинско шишче - 100гр – Тарелка 5 бр</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Сурово свинско със зеленчуци"><p>Сурово свинско шишче със зеленчуци - 100гр – Тарелка 5 бр</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Сурово пилешко шишче"><p>Сурово пилешко шишче - 100гр – Тарелка 5 бр</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Сурово пилешко със зеленчуци"><p>Сурово пилешко шишче със зеленчуци - 100гр – Тарелка 5 бр</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Сурово свинско месо за готвене"><p>Сурово свинско месо за готвене – Тарелка</p></div>
+    </div>
+  </div>
+
+  <!-- Варено-пушени деликатеси от свинско месо -->
+  <div class="category">
+    <h2>🥓 Варено-пушени деликатеси от свинско месо</h2>
+    <div class="products">
+      <div class="product"><img src="images/placeholder.png" alt="Свинска флейка"><p>Свинска флейка – вакуум</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Свински бекон"><p>Свински бекон – вакуум</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Деликатес от свинско филе"><p>Деликатес от свинско филе – вакуум</p></div>
+      <div class="product"><img src="images/placeholder.png" alt="Свинско филе"><p>Свинско филе – вакуум</p></div>
+    </div>
+  </div>
+
+  <!-- Можем да продължим с останалите категории по същия начин -->
+
+</div>
 
 <!-- ===== FOOTER ===== -->
 <footer>
   <p>© 2026 Irish Country Products</p>
 </footer>
 
-<!-- ===== STYLES ===== -->
+<!-- ===== STYLES (от стария код) ===== -->
 <style>
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background: #f5f5f5;
 }
-
-/* HEADER */
 header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
   background: #7a0000;
   color: white;
   padding: 20px;
-}
-header img {
-  width: 100px;
-  height: auto;
-}
-header h1 {
-  margin: 0;
-  font-size: 28px;
-}
-
-/* NAVIGATION */
-nav {
-  background: #222;
-  text-align: center;
-  padding: 10px;
-}
-nav a {
-  color: white;
-  margin: 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* MAIN CONTAINER */
-.container {
-  padding: 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-/* CATEGORIES */
-.category {
-  margin-top: 40px;
-}
-
-/* PRODUCTS GRID */
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-/* PRODUCT CARD */
-.product {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  width: 300px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   text-align: center;
 }
-.product img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-/* FOOTER */
-footer {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-}
+header h1 { margin: 0 0 10px 0; font-size: 32px; }
+.top-bar { display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap; }
+.top-bar nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+.top-bar nav a:hover { text-decoration: underline; }
+.contact span { margin: 0 5px; }
+nav { text-align: center; }
+.container { padding: 20px; max-width: 1000px; margin: auto; }
+.category { margin-top: 40px; }
+.products { display: flex; flex-wrap: wrap; gap: 15px; }
+.product { background: white; padding: 15px; border-radius: 10px; width: 300px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center; }
+.product img { width: 100%; border-radius: 10px; margin-bottom: 10px; }
+footer { background: #111; color: white; text-align: center; padding: 15px; margin-top: 40px; }
 </style>
 
 </body>
