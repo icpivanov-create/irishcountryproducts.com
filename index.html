@@ -12,54 +12,66 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
- .social-float {
+.social-float {
   position: fixed;
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   z-index: 9999;
 }
 
+/* бутон */
 .social-float a {
-  width: 45px;
-  height: 45px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-  border-radius: 50%;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  font-family: Arial, sans-serif;
+  border-radius: 14px;
+  background: white;
+  border: 1px solid #eee;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.2s;
 }
 
-/* Facebook */
-.social-float .fb {
-  background: #1877f2;
+/* SVG икони */
+.social-float svg {
+  width: 22px;
+  height: 22px;
+  fill: black;
 }
 
-/* Instagram */
-.social-float .ig {
-  background: #e1306c;
-}
-
+/* hover ефект */
 .social-float a:hover {
-  transform: scale(1.1);
+  transform: translateX(5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
-  @media (max-width: 768px) {
+
+/* Facebook hover */
+.social-float a:hover svg {
+  fill: #1877f2;
+}
+
+/* Instagram hover */
+.social-float a:nth-child(2):hover svg {
+  fill: #e1306c;
+}@media (max-width: 768px) 
+ {
   .social-float {
     left: 10px;
-    gap: 8px;
   }
 
   .social-float a {
-    width: 40px;
-    height: 40px;
-    font-size: 12px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .social-float svg {
+    width: 20px;
+    height: 20px;
   }
 }
   
@@ -186,13 +198,21 @@ footer {
 
 <body>
 <div class="social-float">
-  <a href="https://www.facebook.com/share/1A1WRtG2aU/" target="_blank" class="fb">
-    F
+  
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
+    <svg viewBox="0 0 24 24">
+      <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.3c0-2.4 1.4-3.7 3.6-3.7 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5V12H16l-.5 3h-2.5v7A10 10 0 0 0 22 12z"/>
+    </svg>
   </a>
 
-  <a href="https://www.instagram.com/mesni_delikatesi?igsh=MWN4anl5cmwxMmd6bA==" target="_blank" class="ig">
-    IG
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/yourpage" target="_blank" aria-label="Instagram">
+    <svg viewBox="0 0 24 24">
+      <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4.5A4.5 4.5 0 1 1 7.5 13 4.5 4.5 0 0 1 12 8.5zm0 2A2.5 2.5 0 1 0 14.5 13 2.5 2.5 0 0 0 12 10.5zM17.5 6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
+    </svg>
   </a>
+
 </div>
 <!-- HEADER -->
 <header>
