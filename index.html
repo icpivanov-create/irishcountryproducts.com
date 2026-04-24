@@ -82,6 +82,53 @@ footer {
   padding: 20px;
   border-top: 1px solid #eee;
 }
+
+/* ===================== */
+/* COOKIE POPUP */
+/* ===================== */
+
+#cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  color: black;
+  border: 1px solid #eee;
+  padding: 16px 20px;
+  border-radius: 12px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  z-index: 9999;
+  max-width: 90%;
+  width: 600px;
+}
+
+#cookie-banner p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#cookie-banner a {
+  color: black;
+  text-decoration: underline;
+}
+
+#cookie-banner button {
+  padding: 8px 14px;
+  border: 1px solid black;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#cookie-banner button:hover {
+  background: black;
+  color: white;
+}
 </style>
 
 </head>
@@ -116,11 +163,38 @@ footer {
   </p>
 </div>
 
+<!-- COOKIE POPUP -->
+<div id="cookie-banner">
+  <p>
+    Този сайт използва бисквитки за подобряване на услугите.
+    <a href="privacy.html">Политика</a>
+  </p>
+
+  <button id="accept-cookies">Приемам</button>
+</div>
+
 <!-- FOOTER -->
 <footer>
   <p>© 2026 Irish Country Products</p>
   <a href="privacy.html">Политика за поверителност</a>
 </footer>
+
+<!-- JS -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const banner = document.getElementById("cookie-banner");
+  const button = document.getElementById("accept-cookies");
+
+  if (localStorage.getItem("cookiesAccepted")) {
+    banner.style.display = "none";
+  }
+
+  button.addEventListener("click", function() {
+    localStorage.setItem("cookiesAccepted", "true");
+    banner.style.display = "none";
+  });
+});
+</script>
 
 </body>
 </html>
