@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Начална страница -->
+  <url>
+    <loc>https://irishcountryproducts.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Каталог -->
+  <url>
+    <loc>https://irishcountryproducts.com/catalog.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Блог -->
+  <url>
+    <loc>https://irishcountryproducts.com/blog.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Контакти -->
+  <url>
+    <loc>https://irishcountryproducts.com/contact.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Политика за поверителност -->
+  <url>
+    <loc>https://irishcountryproducts.com/privacy.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
