@@ -85,7 +85,37 @@ body {
   background: white;
   color: #111;
 }
+@media (max-width: 768px) {
 
+  .top-bar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .top-bar nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 6px;
+  }
+
+  .top-bar nav a {
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+  }
+
+  .contact {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .contact span {
+    display: block;
+    margin: 4px 0;
+  }
+}
 /* HEADER */
 header {
   background: white;
