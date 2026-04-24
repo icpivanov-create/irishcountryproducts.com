@@ -1,87 +1,125 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+
+<title>Месни продукти | Irish Country Products</title>
+
+<meta name="description" content="Irish Country Products LTD предлага месни продукти – кайма, кебапчета, кюфтета и деликатеси.">
+<meta name="keywords" content="месни продукти, кайма, кебапчета, кюфтета">
+
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: white;
+  color: #111;
+}
+
+/* HEADER */
+header {
+  background: white;
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.top-bar nav a {
+  color: black;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.top-bar nav a:hover {
+  text-decoration: underline;
+}
+
+.contact a {
+  color: black;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  background: url('banner.png') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 32px;
+}
+
+.hero p {
+  max-width: 800px;
+  font-size: 20px;
+}
+
+/* FOOTER */
+footer {
+  background: white;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #eee;
+}
+</style>
+
+</head>
+
 <body>
 
-<!-- ===== HEADER ===== -->
+<!-- HEADER -->
 <header>
-  <title>Месни продукти | Кайма, кебапчета, кюфтета, деликатеси | Вкусът на Бачо Ивань</title>
-
-<meta name="description" content="Irish Country Products LTD предлага месни продукти – кайма, кебапчета, кюфтета, пилешки продукти и деликатеси. Качество и традиционен вкус.">
-
-<meta name="keywords" content="месни продукти, кайма, кебапчета, кюфтета, пилешки продукти, деликатеси, България, Бачо Ивань">
-  
-  <!-- МЕНЮ + КОНТАКТИ -->
   <div class="top-bar">
+
     <nav>
-      <a href="#">Начало</a>
+      <a href="index.html">Начало</a>
       <a href="catalog.html">Каталог</a>
       <a href="blog.html">Блог</a>
       <a href="contact.html">Контакти</a>
     </nav>
-   <div class="contact">
-  <span>📞за поръчки <a href="tel:+0888110677" style="color:white; text-decoration:none;">0888110677</a></span> | 
-  <span>✉ <a href="mailto:office@irishcountryproducts.com" style="color:white; text-decoration:none;">office@irishcountryproducts.com</a></span>
-</div>
-  
+
+    <div class="contact">
+      <span>📞 <a href="tel:+0888110677">0888 110 677</a></span> |
+      <span>✉ <a href="mailto:office@irishcountryproducts.com">Email</a></span>
+    </div>
+
   </div>
 </header>
 
-<!-- ===== HERO БАНЕР ===== -->
-<div style="
-background: url('banner.png');
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-background-color: white;
-height: 80vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: flex-end;
-padding-bottom: 60px;
-color: white;
-text-align: center;
-">
-<h1 style="font-size:32px; margin-bottom:20px;">
-Премиум месни продукти
-</h1>
-<p style="max-width:800px; margin:20px auto; text-align:center; font-size:24px;">
-Irish Country Products предлага висококачествени месни продукти с марката Бачо Ивань – кайма, кебапчета, кюфтета, пилешки продукти и деликатеси. 
-Традиционен вкус, подбрани съставки и сигурно качество за вашата трапеза. Предлагаме също и богат асортимент от замразени меса и зеленчуци на конкуретни цени. 
-</p>
+<!-- HERO -->
+<div class="hero">
+  <h1>Премиум месни продукти</h1>
+  <p>
+    Irish Country Products предлага висококачествени месни продукти – кайма, кебапчета, кюфтета и деликатеси.
+    Традиционен вкус и сигурно качество за вашата трапеза.
+  </p>
+</div>
 
-<!-- ===== FOOTER ===== -->
+<!-- FOOTER -->
 <footer>
   <p>© 2026 Irish Country Products</p>
 </footer>
 
-<!-- ===== STYLES ===== -->
-<style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f5f5f5;
-}
-header {
-  background: #7a0000;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-header h1 { margin: 0 0 10px 0; font-size: 32px; }
-.top-bar { display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap; }
-.top-bar nav a { color: white;
-  margin: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px; }
-.top-bar nav a:hover { text-decoration: underline; }
-.contact span { margin: 0 5px; }
-footer { background: #111; color: white; text-align: center; padding: 15px; margin-top: 40px; }
-  @media (max-width: 600px) {
-  nav a {
-    font-size: 20px;
-    display: inline-block;
-    margin: 8px; }
-}
-</style>
-
 </body>
+</html>
